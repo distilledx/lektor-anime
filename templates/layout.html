@@ -1,16 +1,57 @@
-<!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — maybe</title>
+<!DOCTYPE html>
+<html lang="en">
 
-<body>
-  <header>
-    <h1>maybe</h1>
-  </header>
-  <div class="page">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anime</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <style>
+    .card-ani-img {
+      object-fit: cover;
+      width: 18rem;
+      height: 9rem;
+    }
+
+    .back {
+      background-color: #212529;
+    }
+
+    .card-color {
+      background-color: #343a40;
+    }
+
+    .flexy {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .flexed {
+      width: 18rem;
+    }
+
+    .hero {
+      text-align: center;
+      background-image: url('./background.jpg');
+      object-fit: contain;
+      margin-bottom: 10vh;
+    }
+  </style>
+</head>
+
+<body class="back">
+  <div class="container-fluid py-5 hero">
+    <h1 class="display-4 text-light">Here's some anime I've been watching this week</h1>
+  </div>
+  <div class="flexy">
     {% block body %}{% endblock %}
   </div>
-  <footer>
-    &copy; Copyright 2023 by tejas.
-  </footer>
 </body>
+
+</html>

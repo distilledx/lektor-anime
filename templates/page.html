@@ -1,8 +1,13 @@
 {% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
 {% block body %}
 {% for child in this.children %}
-<h2>{{child}}</h2>
-child.description
+<div class="flexed card card-color text-light">
+    <img class="card-img-top card-ani-img" src="{{child.image}}" alt="{{child.title}}" />
+    <div class="card-body">
+        <h5 class="card-title">{{child.title}}</h5>
+        <p class="card-text">{{child.description}}</p>
+        <a href="{{child.url}}" class="btn btn-outline-info">Check it out</a>
+    </div>
+</div>
 {% endfor %}
 {% endblock %}
