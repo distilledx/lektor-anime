@@ -1,6 +1,6 @@
 # Anime I'm watching
 
-A CMS website built with Lektor and Bootstrap 5 listing anime that I'm watching.
+A CMS website built with Lektor and Bootstrap 5 listing anime that I'm watching. Available to view [here](https://distilledx.github.io/lektor-anime/).
 
 Start with `lektor server` and visit http://127.0.0.1:5000/ to see the website.
 
