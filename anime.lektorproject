@@ -2,4 +2,13 @@
 name = anime
 
 [servers.ghpages]
+enabled = yes
+name = Github pages on repo
+target = ghpages://distilledx/lektor-anime
+default = yes
+
+[servers.ghpages-https]
+enabled = yes
+name = Github pages on repo
 target = ghpages+https://distilledx/lektor-anime
+default = not
