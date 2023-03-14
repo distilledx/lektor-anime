@@ -1,2 +1,5 @@
 [project]
 name = anime
+
+[servers.ghpages]
+target = ghpages+https://distilledx/lektor-anime
