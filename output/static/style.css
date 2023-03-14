@@ -1,0 +1,31 @@
+.card-ani-img {
+    object-fit: cover;
+    width: 18rem;
+    height: 9rem;
+}
+
+.back {
+    background-color: #212529;
+}
+
+.card-color {
+    background-color: #343a40;
+}
+
+.flexy {
+    display: flex;
+    align-items: center top;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flexed {
+    width: 18rem;
+}
+
+.hero {
+    text-align: center;
+    background-image: url('./background.jpg');
+    object-fit: contain;
+    margin-bottom: 10vh;
+}
