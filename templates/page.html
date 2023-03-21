@@ -1,13 +1,19 @@
 {% extends "layout.html" %}
 {% block body %}
-{% for child in this.children %}
-<div class="flexed card card-color text-light">
-    <img class="card-img-top card-ani-img" src="{{child.image}}" alt="{{child.title}}" />
-    <div class="card-body">
-        <h5 class="card-title">{{child.title}}</h5>
-        <p class="card-text">{{child.description}}</p>
-        <a href="{{child.url}}" class="btn btn-outline-info">Check it out</a>
-    </div>
+<div class="container-fluid py-5 hero">
+    <h1 class="display-4 text-light">Here's some anime I've been watching this week</h1>
 </div>
-{% endfor %}
+<div class="flexy" style="justify-content: space-around;">
+    {% for child in site.query('/anime') %}
+    <div class="flexed card card-color text-light">
+        <img class="card-img-top card-ani-img" src="{{child.image}}" alt="{{child.title}}" />
+        <div class="card-body">
+            <h5 class="card-title">{{child.title}}</h5>
+            <p class="card-text">{{child.description}}</p>
+            <a href="{{child.url}}" class="btn btn-outline-info">Check it out</a>
+            <a href="{{child.path}}" class="btn btn-outline-primary">More</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}

@@ -14,8 +14,6 @@
 
 .flexy {
     display: flex;
-    align-items: center top;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -28,4 +26,13 @@
     background-image: url('./background.jpg');
     object-fit: contain;
     margin-bottom: 10vh;
+}
+
+.desc {
+    padding: 1rem;
+    width: 50rem;
+}
+
+.ani-img {
+    height: 30rem;
 }
