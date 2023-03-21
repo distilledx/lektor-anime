@@ -11,7 +11,7 @@
             <h5 class="card-title">{{child.title}}</h5>
             <p class="card-text">{{child.description}}</p>
             <a href="{{child.url}}" class="btn btn-outline-info">Check it out</a>
-            <a href="{{child.path}}" class="btn btn-outline-primary">More</a>
+            <a href="{{ child|url }}" class="btn btn-outline-primary">More</a>
         </div>
     </div>
     {% endfor %}
