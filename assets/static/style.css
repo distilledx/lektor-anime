@@ -20,6 +20,18 @@
 
 .flexed {
     width: 18rem;
+    animation: fadeIn 0.75s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(3%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 .hero {
@@ -36,4 +48,18 @@
 
 .ani-img {
     height: 30rem;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+div.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+p.card-text {
+    flex-grow: 1;
 }
